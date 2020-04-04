@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MCAPIWrapper.Enumurators;
 namespace MCAPIWrapper
 {
+    /// <summary>
+    /// Get Minecraft's API Status
+    /// An enumurator is returner for each service.
+    /// </summary>
     public static class Status
     {
+        /// <summary>
+        /// Minecraft.net Status
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MinecraftNET()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -20,6 +25,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// Session.minecraft.net Status
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MinecraftSession()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -32,6 +41,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// account.mojang.com
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MojangAccount()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -44,6 +57,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// auth.mojang.com
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MojangAuth()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -56,6 +73,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// skins.minecraft.net status
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MinecraftSkins()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -68,6 +89,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// authserver.mojang.com
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MojangAuthServer()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -80,6 +105,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// sessionserver.mojang.com
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MojangSessionServer()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -92,6 +121,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// api.mojang.com status
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MojangAPI()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -104,6 +137,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// textures.minecraft.net
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus MinecraftTextures()
         {
             var response = Requester.Request(Requester.URL.Status);
@@ -116,6 +153,10 @@ namespace MCAPIWrapper
                 return APIStatus.Issues;
             else return APIStatus.Offline;
         }
+        /// <summary>
+        /// mojang.com status
+        /// </summary>
+        /// <returns>APIStatus Enumurator</returns>
         public static APIStatus Mojang()
         {
             var response = Requester.Request(Requester.URL.Status);
